@@ -1,0 +1,159 @@
+/* Base settings */
+body {
+    background-color: #121212;
+    color: #eee;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Header styling */
+header {
+    font-size: 3rem;
+    color: #f4c542; /* warm yellow */
+    text-align: center;
+    margin-bottom: 2rem;
+    font-weight: 700;
+}
+
+/* Container for inputs and labels */
+#user-info, #ideal-bod, #sports, #container, #container2 {
+    margin-bottom: 1.5rem;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Labels */
+label {
+    display: block;
+    margin-bottom: 0.4rem;
+    font-weight: 600;
+    color: #ddd;
+}
+
+/* Inputs and select */
+input[type="text"],
+input[type="search"],
+input[type="date"],
+select {
+    width: 100%;
+    padding: 12px 16px;
+    border-radius: 8px;
+    font-size: 1rem;
+    border: 1.5px solid #3a3a3a;
+    background-color: #1e1e1e;
+    color: #eee;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="search"]:focus,
+input[type="date"]:focus,
+select:focus {
+    border-color: #f4c542;
+    outline: none;
+}
+
+/* Radio buttons container */
+.gen {
+    max-width: 400px;
+    margin: 1rem auto;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    color: #ddd;
+    font-weight: 600;
+}
+
+.gen label {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+}
+
+.gen input[type="radio"] {
+    width: 18px;
+    height: 18px;
+}
+
+/* File upload */
+#pic-btn {
+    max-width: 400px;
+    margin: 1rem auto 2rem;
+    text-align: center;
+}
+
+.file-upload {
+    display: none;
+}
+
+.custom-button {
+    display: inline-block;
+    background-color: #28a745;
+    color: white;
+    padding: 10px 30px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.25s;
+}
+
+.custom-button:hover {
+    background-color: #218838;
+}
+
+/* Button */
+#calc-btn {
+    background: #f4c542;
+    color: #121212;
+    border: none;
+    border-radius: 8px;
+    padding: 14px 40px;
+    font-size: 1.25rem;
+    cursor: pointer;
+    font-weight: 700;
+    display: block;
+    margin: 2rem auto;
+    box-shadow: 0 4px 12px rgba(244, 197, 66, 0.6);
+    transition: background-color 0.3s;
+}
+#calc-btn:hover {
+    background: #e2b93c;
+}
+
+/* Result area */
+#bmi_res {
+    max-width: 400px;
+    margin: 1rem auto;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #f4c542;
+    text-align: center;
+}
+
+/* Training plan output */
+#training_plan {
+    max-width: 600px;
+    margin: 3rem auto;
+    background-color: #1e1e1e;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(244, 197, 66, 0.3);
+    color: #ddd;
+    font-size: 1rem;
+    line-height: 1.5;
+    white-space: pre-line; /* preserve line breaks */
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+    body {
+        padding: 15px;
+    }
+    #training_plan, #bmi_res, #calc-btn, #user-info, #ideal-bod, #sports, #container, #container2, .gen {
+        max-width: 100%;
+    }
+}

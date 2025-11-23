@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+        <header>
+            <span class="logo">Body Mass Index</span>
+            <h1></h1>
+        </header>
+        <div id="user-info">
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="Enter your name">
+            </div>
+
+        <div>
+            <label for="birthday">Birthday:</label>
+            <input type="date" id="birthday" placeholder="Select your birthday">
+        </div>
+
+
+        <div id="ideal-bod">
+             <label for="desire">Desire:</label>
+            <input type="search" class="bmi-field"  id="desire" placeholder="Explain your ideal body">
+        </div>
+        <div id="sports">
+        <label for="sport">Sports:</label>
+        <select id="sport" name="sport">
+            <option value="">Please choose a sport</option>
+            <option value="bodybuilding">Bodybuilding</option>
+            <option value="cardio">Cardio</option>
+            <option value="football">Football</option>
+            <option value="basketball">Basketball</option>
+            <option value="tennis">Tennis</option>
+            <option value="swimming">Swimming</option>
+            <option value="running">Running</option>
+            <option value="cycling">Cycling</option>
+            <option value="yoga">Yoga</option>
+            <option value="pilates">Pilates</option>
+            <option value="boxing">Boxing</option>
+            <option value="martial-arts">Martial Arts</option>
+            <option value="weightlifting">Weightlifting</option>
+            <option value="crossfit">CrossFit</option>
+            <option value="dance">Dance</option>
+            <option value="hiking">Hiking</option>
+            <option value="skiing">Skiing</option>
+            <option value="snowboarding">Snowboarding</option>
+        </select>
+        </div>
+
+
+        <div id="container">
+           <label for="weight">Weight:</label>
+           <input type="text" class="bmi-field"  id="weight" placeholder="weight">
+       </div>
+
+       <div id="container2">
+           <label for="height">Height:</label>
+           <input type="text" class="bmi-field" id="height" placeholder="height">
+       </div>
+
+        <div>
+        <form action="/submit-gender" method="post" class="gen" id="gender">
+            <label for="male">Male</label>
+            <input type="radio" id="male" name="gender" value="male">
+
+            <label for="female">Female</label>
+            <input type="radio" id="female" name="gender" value="female">
+
+
+        </form>
+        </div>
+
+       <div>
+        <form id="pic-btn">
+
+            <input type="file" id="fileUpload" class="file-upload" name="fileUpload" >
+            <label for="fileUpload" class="custom-button">Upload picture</label>
+            <p id="fileName"></p>
+        </form>
+       </div>
+       <div id="click_btn">
+             <button id="calc-btn" type="button">Calculate BMI</button>
+       </div>
+
+       <div id="bmi_res">
+           <strong id="bmi-res"></strong>
+
+       </div>
+
+        <div id="training_plan"></div>
+
+
+
+
+
+
+
+        <script src="main.js"></script>
+
+</body>
+</html>
